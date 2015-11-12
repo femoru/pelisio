@@ -35,6 +35,7 @@ $(document).ready(function() {
 function mostrarPelicula(response){
 	info = response;
     $('#divframe').attr('src','https://www.youtube.com/embed/'+info.videos.results[0].key+'?rel=0');
+	$('#imag').attr('src','http://image.tmdb.org/t/p/w154/'+info.poster_path);
     var datos = $('#datos');
     datos.text('');
     datos.append("<br/><strong>Nombre</strong>: " + info.title);
