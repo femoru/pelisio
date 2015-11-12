@@ -1,0 +1,60 @@
+html,body{
+	height:100%;
+}
+header{
+	height:10%;
+}
+
+.navbar-inner {
+    background-color: #154295;
+    border-width: 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+	color: #fff;
+	font-size:18px;
+	font-weight: bold;
+}
+#barra .container-fluid {
+    padding-left: 1em !important;
+	height:100%;
+	line-height: 50px;
+}
+.container{
+    background-color: #333;
+    border-bottom:10px !important;
+    padding:0 !important;
+	min-height:90%;
+}
+.header{
+    background-image: linear-gradient(to bottom, #00598A 0px, #001D44 100%);
+    background-repeat: repeat-x;
+}
+.header h1{
+    color:#fff;
+    font-size:3em;
+}
+.optn{
+    color:#337AB7;
+	background-color: white;
+}
+.optn:hover{
+    color: white;
+    background-color:#004D7A;
+    
+}
+.optn.btn-primary{
+	color: white;
+}
+#datos{
+    color:white;
+}
+º.zonaYoutube{
+	background-color:black;
+}
+.votar{
+    display:inline-block;
+}
+.zonaOpciones{
+	margin:1em 0;
+	background-color: #154295;
+	padding: 0.5em;
+}

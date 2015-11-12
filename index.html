@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="@rhadhy">
+        <!--<link rel="icon" href="../../favicon.ico">-->
+    
+        <title>SIO | Viernes de Peliculas</title>
+          <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+    </head>
+
+    <body>
+		<header>
+			<nav id="barra" class="navbar-inner">
+				<div class="container-fluid">
+					<p> Viernes de Peliculas </p>
+				</div>
+			</nav>
+		</header>
+        <!--div class="header text-center navbar-inverse navbar"><h1> Viernes de Peliculas </h1></div-->
+        <div class="container col-xs-12 col-sm-10 col-sm-offset-1">
+            <div class="zonaYoutube col-xs-12">
+                <iframe id="divframe" class="col-sm-offset-1 col-sm-10" width="100%" height="300px" src="" frameborder="0" rel="0" allowfullscreen></iframe>
+            </div>
+            <div class="zonaOpciones text-left col-xs-12">
+                <a href="#1" data-opcion="1" class="optn btn btn-primary">1</a>
+                <a href="#2" data-opcion="2" class="optn btn">2</a>
+                <a href="#3" data-opcion="3" class="optn btn">3</a>
+				<div class="votar pull-right">
+                    <span class="btn btn-success">Vota</span>
+                </div>
+            </div>
+            <div class="zonaDatos col-xs-12">
+                <div id="datos" class="col-xs-10"></div>
+            </div>
+        </div><!-- /.container -->
+    
+    
+        <!--JavaScript Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/pelisio.js"></script>
+    </body>
+</html>
