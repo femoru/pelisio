@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -20,11 +20,11 @@
 		<header>
 			<nav id="barra" class="navbar-inner">
 				<div class="container-fluid">
-					<p> Viernes de Peliculas </p>
+					<p class="pull-left"> Viernes de Peliculas </p>
+					<button data-toggle="modal" data-target=".bs-example-modal-sm" id="login" type="button" class="btn btn-info btn-sm pull-right">Ingresar</button>
 				</div>
-			</nav>
+        	</nav>
 		</header>
-        <!--div class="header text-center navbar-inverse navbar"><h1> Viernes de Peliculas </h1></div-->
         <div class="container col-xs-12 col-sm-10 col-sm-offset-1">
             <div class="zonaYoutube col-xs-12 hidden-xs">
                 <iframe id="divframe" class="col-sm-offset-1 col-sm-10" width="100%" height="300px" src="" frameborder="0" rel="0" allowfullscreen></iframe>
@@ -33,9 +33,11 @@
                 <a href="#1" data-opcion="1" class="optn btn btn-primary">1</a>
                 <a href="#2" data-opcion="2" class="optn btn">2</a>
                 <a href="#3" data-opcion="3" class="optn btn">3</a>
-				<div class="votar pull-right">
-                    <span class="btn btn-success">Vota</span>
+
+                <div class="pull-right">
+                    <span class="votar btn btn-success">Votar <span id="totalVotos" class="badge"></span></span>
                 </div>
+
             </div>
             <div class="zonaDatos col-xs-12">
 				<div class="zonaImagen pull-left col-xs-12 col-sm-3 text-center" ><img id="imag"/></div>
@@ -48,5 +50,25 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/pelisio.js"></script>
+
+        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+            <div class="container-fluid">
+            <div class="checkbox"></div>
+                <form class="form-signin" id="form-logueo" action="inscribir.php" method="post">
+                    <label for="user" class="sr-only">Usuario</label>
+                    <input type="text" id="user" class="form-control" placeholder="Usuario" required="" autofocus="">
+                    <label for="pass" class="sr-only">Constraseña</label>
+                    <input type="password" id="pass" class="form-control" placeholder="Contraseña" required="">
+                    <div class="checkbox">
+                        <button id="inicioSesion" class="btn btn-primary btn-block" type="button">Iniciar Sesion</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
     </body>
 </html>

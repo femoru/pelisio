@@ -32,6 +32,22 @@
 	        return $temp;
     	}
 
+    	public function consulta2($consulta) {
+
+    		$result = $this->link->query($consulta);
+	        if (!$result) die('Consulta invalida: ' . mysqli_error());
+
+			$resultado = $result->fetch_array();
+
+			return $resultado;
+    	}
+
+    	public function ejecutar($consulta) {
+
+    		$result = $this->link->query($consulta) or die('Consulta invalida: ' . mysqli_error());
+	        return $result;
+    	}
+
     	public function desconectar(){
     		mysqli_close($this->link);
     	}

@@ -47,7 +47,12 @@ header{
 #datos{
     color:white;
 }
-º.zonaYoutube{
+
+#login{
+	margin: 1em;
+}
+
+.zonaYoutube{
 	background-color:black;
 }
 .votar{

@@ -2,9 +2,12 @@
 	
 	require 'db.php';
 
+	$cod = $_POST['cod'];
 	$db = new DBmysql('192.168.0.93','pelisio','pel2015','pelisio');
 
-	$temp = $db->consulta("SELECT cod, SUM(1) otro FROM votos group by cod");
+	$temp = $db->consulta2("SELECT IFNULL(COUNT(cod),0) total FROM votos WHERE cod =".$cod);
 
-echo json_encode($temp);
+	echo($temp['total']);
+
+	//echo json_encode($temp);
 ?>
